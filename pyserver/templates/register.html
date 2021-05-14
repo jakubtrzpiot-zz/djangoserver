@@ -1,0 +1,30 @@
+{% load static %}
+<html lang="pl">
+<head>
+	<link href="{% static 'css/login.css'%}" rel="stylesheet"/>
+	<meta charset="utf-8" />
+</head>
+<body>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <a class="inactive underlineHover a" href="{% url 'login' %}"> Zaloguj się </a>
+    <h2 class="active"> Zarejestruj się </h2>
+
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="text" id="password" class="fadeIn third" name="password" placeholder="hasło">
+      <input type="text" id="email" class="fadeIn fourth" name="email" placeholder="email">
+      <input type="submit" class="fadeIn fifth" value="Zarejestruj się">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Zarejestruj się przez Google</a>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
