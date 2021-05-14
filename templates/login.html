@@ -1,0 +1,30 @@
+{% load static %}
+<html lang="pl">
+<head>
+	<link href="{% static 'css/login.css'%}" rel="stylesheet"/>
+	<title>Login page</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="active"> Zaloguj się </h2>
+    <a class="inactive underlineHover a" href="{% url 'register' %}"> Zarejestruj się</a>
+
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <input type="text" id="password" class="fadeIn third" name="password" placeholder="hasło">
+      <input type="submit" class="fadeIn fourth" value="Zaloguj się">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Nie pamiętasz hasła?</a>
+    </div>
+
+  </div>
+</div>
+</body>
+</html>
